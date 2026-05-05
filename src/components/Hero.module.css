@@ -8,6 +8,19 @@
   padding-top: 80px; /* navbar height offset */
 }
 
+.bridge {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.copy {
+  max-width: 620px;
+}
+
 .grid {
   position: absolute;
   inset: 0;
@@ -20,9 +33,16 @@
 
 .gradientLine {
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--teal) 0%, var(--gold) 50%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    var(--teal) 0%,
+    var(--gold) 50%,
+    transparent 100%
+  );
 }
 
 .body {
@@ -37,7 +57,7 @@
 
 .eyebrow {
   font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--teal);
   letter-spacing: 0.25em;
@@ -60,7 +80,7 @@
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
-  line-height: 1.0;
+  line-height: 1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text);
@@ -85,11 +105,11 @@
 
 .sub {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: var(--mid);
   line-height: 1.75;
   max-width: 460px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .actions {
@@ -101,7 +121,7 @@
 
 .btnPrimary {
   font-family: var(--font-display);
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -119,15 +139,17 @@
 
 .btnGhost {
   font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--mid);
   background: transparent;
   border: 1px solid var(--border);
   padding: 0.8rem 2rem;
-  transition: border-color 0.2s, color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
   white-space: nowrap;
   display: inline-block;
 }
@@ -151,7 +173,8 @@
     flex-direction: column;
     align-items: stretch;
   }
-  .btnPrimary, .btnGhost {
+  .btnPrimary,
+  .btnGhost {
     text-align: center;
   }
 }

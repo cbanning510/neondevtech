@@ -5,7 +5,7 @@ const apps = [
   '/app1.png', '/app2.png', '/app4.png', '/app5.png',
   '/app6.png', '/app7.png', '/app8.png', '/app9.png', '/app10.png',
   '/app11.png', '/app12.png', '/app13.png',
-  '/IMG_4539.png', '/IMG_4538.PNG', '/IMG_4540.jpeg', '/missio.png',
+  '/app14.png', '/app15.png', '/app16.png', '/missio.png',
 ];
 
 const AppShowcase = () => {

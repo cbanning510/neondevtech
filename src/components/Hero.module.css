@@ -1,6 +1,6 @@
 .hero {
   background: var(--bg);
-  min-height: 100vh;
+  min-height: 55vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -30,14 +30,54 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 3rem 3rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 3rem 3rem;
   position: relative;
   z-index: 1;
+  gap: 0;
+}
+
+.logoHeadWrap {
+  display: contents;
+}
+
+.logoHead {
+  width: min(160px, 22vw);
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.headline {
+  font-family: 'Oxanium', sans-serif;
+  font-size: clamp(2.4rem, 5.5vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1;
+  margin: 0;
+  transform: scaleY(0.85);
+  display: inline-block;
+}
+
+.accent {
+  color: var(--teal);
+}
+
+.tagline {
+  font-family: 'Widolte', sans-serif;
+  font-size: clamp(0.8rem, 1.6vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin: -0.6rem 0 0;
 }
 
 .eyebrow {
   font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--teal);
   letter-spacing: 0.25em;
@@ -56,59 +96,41 @@
   flex-shrink: 0;
 }
 
-.headline {
-  font-family: var(--font-display);
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 700;
-  line-height: 1.0;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--text);
-  max-width: 700px;
-}
-
-.accent {
-  font-style: normal;
-  color: var(--gold);
-}
 
 .bottom {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 2rem 3rem;
-  border-top: 1px solid var(--border);
-  position: relative;
-  z-index: 1;
-  gap: 2rem;
+  display: none;
 }
 
 .sub {
+  margin-top: 1.5rem;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 1.6rem;
   color: var(--mid);
-  line-height: 1.75;
-  max-width: 460px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
   font-weight: 300;
+  margin-top: 0.75rem;
 }
 
 .actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
   flex-shrink: 0;
+  margin-top: 2rem;
 }
 
 .btnPrimary {
   font-family: var(--font-display);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   background: var(--teal);
   color: var(--bg);
   border: none;
-  padding: 0.8rem 2.2rem;
+  padding: 1rem 2.6rem;
   transition: opacity 0.2s;
   white-space: nowrap;
 }
@@ -119,14 +141,14 @@
 
 .btnGhost {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--mid);
   background: transparent;
   border: 1px solid var(--border);
-  padding: 0.8rem 2rem;
+  padding: 1rem 2.4rem;
   transition: border-color 0.2s, color 0.2s;
   white-space: nowrap;
   display: inline-block;
@@ -135,6 +157,41 @@
 .btnGhost:hover {
   border-color: rgba(255, 255, 255, 0.2);
   color: var(--text);
+}
+
+.btnCTA {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: linear-gradient(135deg, var(--teal) 0%, #00e5c8 100%);
+  border: none;
+  padding: 1rem 2.6rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 18px rgba(0, 201, 200, 0.45), 0 0 40px rgba(0, 201, 200, 0.2);
+  white-space: nowrap;
+}
+
+.btnCTA:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(0, 201, 200, 0.7), 0 0 60px rgba(0, 201, 200, 0.3);
+}
+
+.btnCTAGlow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.18) 50%, transparent 100%);
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.btnCTA:hover .btnCTAGlow {
+  transform: translateX(100%);
 }
 
 @media (max-width: 768px) {

@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Futo Sans';
+  src: url('./fonts/futo-sans-heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Widolte';
+  src: url('./fonts/Widolte_Bold_demo.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* ── NeonDevTech Global Styles ── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,9 +21,9 @@
 
 :root {
   /* Brand Colors */
-  --bg:       #0D1B2A;
-  --bg2:      #112236;
-  --bg3:      #162840;
+  --bg:       #060F37;
+  --bg2:      #0B1540;
+  --bg3:      #101A48;
   --text:     #E8EBF2;
   --muted:    #4A5A6A;
   --mid:      #8A9AAA;
@@ -19,7 +33,7 @@
   --border-teal: rgba(0, 201, 200, 0.15);
 
   /* Typography */
-  --font-display: 'Barlow Condensed', sans-serif;
+  --font-display: 'Rajdhani', sans-serif;
   --font-body:    'Barlow', sans-serif;
 }
 

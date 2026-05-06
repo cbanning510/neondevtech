@@ -16,7 +16,6 @@ const Navbar = () => {
         <span className={styles.logoMain}>
           Neon<span className={styles.logoAccent}>Dev</span>Tech
         </span>
-        <span className={styles.logoSub}>Software Solutions</span>
       </div>
 
       <div className={styles.navLinks}>
@@ -26,7 +25,6 @@ const Navbar = () => {
         <a href="#contact">Contact</a>
       </div>
 
-      <button className={styles.navCta}>Book a Call</button>
     </nav>
   );
 };

@@ -1,0 +1,66 @@
+.section {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0 1rem;
+  overflow: hidden;
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+.logoItem {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  filter: grayscale(100%) brightness(2);
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.logoItem:hover {
+  opacity: 1;
+  filter: grayscale(0%) brightness(1);
+}
+
+.logoImg {
+  height: 36px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}

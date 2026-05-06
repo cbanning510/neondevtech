@@ -1,0 +1,44 @@
+.section {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+.phone {
+  width: 120px;
+  height: 220px;
+  border-radius: 16px;
+  border: 2px solid rgba(255,255,255,0.1);
+  flex-shrink: 0;
+  overflow: hidden;
+  transform: rotate(-3deg);
+}
+
+.phone:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

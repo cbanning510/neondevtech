@@ -7,13 +7,13 @@
   justify-content: space-between;
   padding: 1.5rem 3rem;
   border-bottom: 1px solid var(--border);
-  background: rgba(13, 27, 42, 0.85);
+  background: rgba(6, 15, 55, 0.85);
   backdrop-filter: blur(16px);
   transition: background 0.3s;
 }
 
 .nav.scrolled {
-  background: rgba(13, 27, 42, 0.98);
+  background: rgba(6, 15, 55, 0.98);
 }
 
 .logo {
@@ -23,12 +23,15 @@
 }
 
 .logoMain {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 1.9rem;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  display: inline-block;
+  transform: scaleY(0.70) scaleX(0.79);
+  transform-origin: left center;
 }
 
 .logoAccent {
@@ -37,7 +40,7 @@
 
 .logoSub {
   font-family: var(--font-display);
-  font-size: 0.58rem;
+  font-size: 0.78rem;
   font-weight: 400;
   color: var(--teal);
   letter-spacing: 0.28em;
@@ -52,7 +55,7 @@
 
 .navLinks a {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   font-weight: 500;
   color: var(--mid);
   letter-spacing: 0.12em;
@@ -66,12 +69,12 @@
 
 .navCta {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--bg);
   background: var(--teal);
   border: none;
-  padding: 0.55rem 1.6rem;
+  padding: 0.65rem 1.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: opacity 0.2s;

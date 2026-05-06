@@ -52,7 +52,7 @@
   font-family: 'Oxanium', sans-serif;
   font-size: clamp(2.4rem, 5.5vw, 5.5rem);
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--text);
   line-height: 1;

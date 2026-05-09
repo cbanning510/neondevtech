@@ -1,0 +1,362 @@
+.section {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 6rem 2rem;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.overline {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1.2rem;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.02em;
+}
+
+.accent {
+  color: var(--teal);
+}
+
+.sub {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--mid);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Who We Work With ── */
+.whoWeWork {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--mid);
+  text-align: center;
+  max-width: 680px;
+  margin: -3rem auto 4rem;
+  line-height: 1.7;
+}
+
+.whoWeWork strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ── Service Cards ── */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2.5rem;
+  transition: border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--teal), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover {
+  border-color: var(--border-teal);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.cardNumber {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.9rem;
+}
+
+.cardDesc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+
+.cardList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cardItem {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  opacity: 0.8;
+}
+
+.bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--teal);
+  flex-shrink: 0;
+}
+
+/* ── Benefits ── */
+.benefitsBlock {
+  margin-bottom: 5rem;
+}
+
+.benefitsBlock .overline {
+  text-align: center;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 3rem;
+}
+
+.benefit {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.benefitDash {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: var(--teal);
+  flex-shrink: 0;
+  margin-top: 0.55rem;
+}
+
+.benefitLabel {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.benefitBody {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--mid);
+  line-height: 1.65;
+}
+
+/* ── Process ── */
+.processBlock {
+  margin-bottom: 5rem;
+}
+
+.processBlock .overline {
+  text-align: center;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.steps {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stepLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.stepNum {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--teal);
+  background: rgba(0, 201, 200, 0.08);
+  border: 1px solid var(--border-teal);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepLine {
+  flex: 1;
+  width: 1px;
+  background: var(--border);
+  margin: 6px 0;
+  min-height: 28px;
+}
+
+.stepRight {
+  padding-bottom: 2rem;
+}
+
+.stepTitle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+  padding-top: 0.4rem;
+}
+
+.stepBody {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--mid);
+  line-height: 1.65;
+}
+
+/* ── CTA ── */
+.cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg2);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center top, rgba(0, 201, 200, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ctaHeadline {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.8rem;
+}
+
+.ctaSub {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--mid);
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  position: relative;
+  background: var(--teal);
+  color: var(--bg);
+  border: none;
+  padding: 0.85rem 2.2rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+
+.ctaBtn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.ctaBtnGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.2), transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+}

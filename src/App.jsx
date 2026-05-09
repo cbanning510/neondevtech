@@ -4,8 +4,7 @@ import Hero from './components/Hero';
 import AppShowcase from './components/AppShowcase';
 import LogoCarousel from './components/LogoCarousel';
 import TechStack from './components/TechStack';
-// Remaining sections coming soon:
-// import Services from './components/Services';
+import Services from './components/Services';
 // import WhyUs from './components/WhyUs';
 // import Process from './components/Process';
 // import Contact from './components/Contact';
@@ -17,6 +16,7 @@ function App() {
       <Hero />
       <AppShowcase />
       <LogoCarousel />
+      <Services />
       <TechStack />
       {/* Additional sections will go here */}
     </>

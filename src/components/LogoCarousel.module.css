@@ -33,14 +33,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.5;
-  filter: grayscale(100%) brightness(2);
+  opacity: 0.75;
+  filter: grayscale(100%) brightness(3);
   transition: opacity 0.3s, filter 0.3s;
 }
 
 .logoItem:hover {
   opacity: 1;
   filter: grayscale(0%) brightness(1);
+}
+
+.logoItemBright {
+  opacity: 0.5;
+  filter: grayscale(100%) brightness(2.5);
+}
+
+.logoItemBright:hover {
+  opacity: 1;
+  filter: grayscale(0%) brightness(1);
+}
+
+.logoItemBrighter {
+  opacity: 0.7;
+  filter: grayscale(100%) brightness(5);
+}
+
+.logoItemBrighter:hover {
+  opacity: 1;
+  filter: grayscale(0%) brightness(1);
+}
+
+.logoItemMax {
+  opacity: 0.7;
+  filter: grayscale(100%) brightness(2);
+  mix-blend-mode: screen;
+}
+
+.logoItemMax:hover {
+  opacity: 1;
+  filter: grayscale(0%) brightness(1);
+  mix-blend-mode: normal;
 }
 
 .logoImg {

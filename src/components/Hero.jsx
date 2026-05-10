@@ -16,8 +16,8 @@ const Hero = () => {
           <img src="/logohead_trimmed.png" alt="NeonDevTech" className={styles.logoHead} />
         </div>
         <h1 className={styles.headline}>Neon<span className={styles.accent}>Dev</span>Tech</h1>
-        <p className={styles.tagline}>Software Solutions</p>
-        <p className={styles.sub}>Web &amp; Mobile Digital Solutions for Your Business</p>
+        <p className={styles.tagline}>Mobile App Development</p>
+        <p className={styles.sub}>We build scalable mobile applications and provide embedded full-stack engineers.</p>
         <div className={styles.actions}>
           <a href="#services" className={styles.btnGhost}>Our Services ↓</a>
           <button className={styles.btnCTA} onClick={() => setModalOpen(true)}>

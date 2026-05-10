@@ -21,7 +21,7 @@ const logos = [
 
 const LogoCarousel = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="clients">
       <p className={styles.label}>Trusted By</p>
       <div className={styles.track}>
         {[...logos, ...logos].map((logo, i) => (

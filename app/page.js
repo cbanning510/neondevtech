@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <AppShowcase />
       <LogoCarousel />
+      <AppShowcase />
       <Services />
       <TechStack />
     </>

@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import styles from './Hero.module.css';
 import ContactModal from './ContactModal';

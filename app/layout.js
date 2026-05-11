@@ -1,5 +1,4 @@
 import "../src/index.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "NeonDevTech — Mobile & Web Application Development",
@@ -18,12 +17,35 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body>
-        {children}
+      <head>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='anonymous'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Russo+One&family=Oxanium:wght@600;700&family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500&display=swap'
+          rel='stylesheet'
+        />
 
-        {/* Official Google Analytics Component */}
-        <GoogleAnalytics gaId='G-TSS8INSM28' />
-      </body>
+        {/* Google Analytics (gtag.js) */}
+        <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-TSS8INSM28'
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TSS8INSM28');
+            `,
+          }}
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

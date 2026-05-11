@@ -1,4 +1,5 @@
 import "../src/index.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "NeonDevTech — Mobile & Web Application Development",
@@ -30,7 +31,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>{children}</body>
-      <GoogleAnalytics gaId='G-TSS81NSM28' />
+
+      {/* Google Analytics */}
+      <GoogleAnalytics gaId='G-TSS8INSM28' />
     </html>
   );
 }

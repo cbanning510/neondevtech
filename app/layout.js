@@ -28,24 +28,9 @@ export default function RootLayout({ children }) {
           href='https://fonts.googleapis.com/css2?family=Russo+One&family=Oxanium:wght@600;700&family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500&display=swap'
           rel='stylesheet'
         />
-
-        {/* Google Analytics (gtag.js) */}
-        <script
-          async
-          src='https://www.googletagmanager.com/gtag/js?id=G-TSS8INSM28'
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-TSS8INSM28');
-            `,
-          }}
-        />
       </head>
       <body>{children}</body>
+      <GoogleAnalytics gaId='G-TSS81NSM28' />
     </html>
   );
 }

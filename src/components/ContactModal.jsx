@@ -51,6 +51,11 @@ const ContactModal = ({ isOpen, onClose }) => {
             name='_next'
             value='https://www.neondevtech.net/thank-you'
           />
+          <input
+            type='hidden'
+            name='_autoresponse'
+            value="Thanks for reaching out to NeonDevTech! We've received your message and will get back to you within 24 hours."
+          />
 
           <div className={styles.row}>
             <div className={styles.field}>

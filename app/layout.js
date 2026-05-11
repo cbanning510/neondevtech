@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           rel='stylesheet'
         />
 
-        {/* Google Analytics - gtag */}
+        {/* === Google Analytics - Official Code === */}
         <script
           async
           src='https://www.googletagmanager.com/gtag/js?id=G-TSS8INSM28'

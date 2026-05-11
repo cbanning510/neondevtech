@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       <body>{children}</body>
 
       {/* Google Analytics */}
-      <GoogleAnalytics gaId='G-TSS8INSM28' />
+      <GoogleAnalytics gaId='G-TSS81NSM28' />
     </html>
   );
 }
